@@ -1,0 +1,38 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+  name="${artifactId}">
+
+  <fileSets>
+    
+    <fileSet filtered="true" packaged="true" encoding="URF-8" >
+      <directory>src/main/java</directory>
+      <includes>
+      	<include>**/*.java</include>
+      </includes>
+      <excludes/>
+    </fileSet>
+
+    <fileSet filtered="true" packaged="false" encoding="URF-8" >
+      <directory>src/main/resources</directory>
+      <includes>
+      	<include>**/*.xml</include>
+      </includes>
+      <excludes/>
+    </fileSet>
+
+    <fileSet filtered="true" packaged="false" encoding="URF-8" >
+      <directory>src/main/webapp</directory>
+      <includes>
+      	<include>**/*.xml</include>
+      	<include>**/*.jsp</include>
+      </includes>
+      <excludes/>
+    </fileSet>
+    
+    
+  </fileSets>
+
+</archetype-descriptor>
